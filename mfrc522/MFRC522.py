@@ -328,6 +328,8 @@ class MFRC522:
             return 0
 
     def MFRC522_Auth(self, authMode, BlockAddr, Sectorkey, serNum):    
+        status = 0;
+        
         buff = []
 
         # First byte should be the authMode (A or B)
