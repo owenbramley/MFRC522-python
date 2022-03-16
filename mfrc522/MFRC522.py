@@ -327,9 +327,7 @@ class MFRC522:
         else:
             return 0
 
-    def MFRC522_Auth(self, authMode, BlockAddr, Sectorkey, serNum):
-        status = 1;
-        
+    def MFRC522_Auth(self, authMode, BlockAddr, Sectorkey, serNum):    
         buff = []
 
         # First byte should be the authMode (A or B)
